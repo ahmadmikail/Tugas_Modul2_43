@@ -1,6 +1,7 @@
 export default function Example(props) {
-  const { data1, gambar, judultabel } = props;
+  const { data1, judultabel } = props;
   return (
+    
     <div className="flex flex-col">
       <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -31,8 +32,8 @@ export default function Example(props) {
                         <div className="flex-shrink-0 h-10 w-10">
                           <img
                             className="h-10 w-10 rounded-full"
-                            src={gambar}
-                            alt=""
+                            src={item.gambar}
+                            alt="Foto"
                           />
                         </div>
                         <div className="ml-4">
@@ -56,6 +57,7 @@ export default function Example(props) {
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
